@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import {
   CheckIcon,
@@ -7,7 +7,7 @@ import {
 } from "@radix-ui/react-icons";
 import { DropdownMenu as DropdownMenuPrimitive } from "radix-ui";
 
-import { cn } from "@acme/ui";
+import { cn } from "@mainty/ui";
 
 export function DropdownMenu({
   ...props
@@ -240,3 +240,4 @@ export function DropdownMenuSubContent({
     />
   );
 }
+

@@ -1,6 +1,6 @@
-import { useNavigate } from "@tanstack/react-router";
+﻿import { useNavigate } from "@tanstack/react-router";
 
-import { Button } from "@acme/ui/button";
+import { Button } from "@mainty/ui/button";
 
 import { authClient } from "~/auth/client";
 
@@ -46,3 +46,4 @@ export function AuthShowcase() {
     </div>
   );
 }
+

@@ -83,7 +83,7 @@ importers:
 
   .:
     devDependencies:
-      '@acme/prettier-config':
+      '@mainty/prettier-config':
         specifier: workspace:*
         version: link:tooling/prettier
       '@turbo/gen':

@@ -1,8 +1,8 @@
-import type { TRPCRouterRecord } from "@trpc/server";
+﻿import type { TRPCRouterRecord } from "@trpc/server";
 import { z } from "zod/v4";
 
-import { desc, eq } from "@acme/db";
-import { CreatePostSchema, Post } from "@acme/db/schema";
+import { desc, eq } from "@mainty/db";
+import { CreatePostSchema, Post } from "@mainty/db/schema";
 
 import { protectedProcedure, publicProcedure } from "../trpc";
 
@@ -32,3 +32,4 @@ export const postRouter = {
     return ctx.db.delete(Post).where(eq(Post.id, input));
   }),
 } satisfies TRPCRouterRecord;
+

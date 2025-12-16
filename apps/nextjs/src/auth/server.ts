@@ -1,10 +1,10 @@
-import "server-only";
+﻿import "server-only";
 
 import { cache } from "react";
 import { headers } from "next/headers";
 import { nextCookies } from "better-auth/next-js";
 
-import { initAuth } from "@acme/auth";
+import { initAuth } from "@mainty/auth";
 
 import { env } from "~/env";
 
@@ -27,3 +27,4 @@ export const auth = initAuth({
 export const getSession = cache(async () =>
   auth.api.getSession({ headers: await headers() }),
 );
+

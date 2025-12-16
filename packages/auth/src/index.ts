@@ -1,10 +1,10 @@
-import type { BetterAuthOptions, BetterAuthPlugin } from "better-auth";
+﻿import type { BetterAuthOptions, BetterAuthPlugin } from "better-auth";
 import { expo } from "@better-auth/expo";
 import { betterAuth } from "better-auth";
 import { drizzleAdapter } from "better-auth/adapters/drizzle";
 import { oAuthProxy } from "better-auth/plugins";
 
-import { db } from "@acme/db/client";
+import { db } from "@mainty/db/client";
 
 export function initAuth<
   TExtraPlugins extends BetterAuthPlugin[] = [],
@@ -50,3 +50,4 @@ export function initAuth<
 
 export type Auth = ReturnType<typeof initAuth>;
 export type Session = Auth["$Infer"]["Session"];
+

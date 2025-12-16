@@ -1,8 +1,8 @@
-import { createEnv } from "@t3-oss/env-core";
+﻿import { createEnv } from "@t3-oss/env-core";
 import { vercel } from "@t3-oss/env-core/presets-zod";
 import { z } from "zod/v4";
 
-import { authEnv } from "@acme/auth/env";
+import { authEnv } from "@mainty/auth/env";
 
 export const env = createEnv({
   clientPrefix: "VITE_",
@@ -34,3 +34,4 @@ export const env = createEnv({
   skipValidation:
     !!process.env.CI || process.env.npm_lifecycle_event === "lint",
 });
+

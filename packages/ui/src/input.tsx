@@ -1,4 +1,4 @@
-import { cn } from "@acme/ui";
+﻿import { cn } from "@mainty/ui";
 
 export function Input({
   className,
@@ -19,3 +19,4 @@ export function Input({
     />
   );
 }
+

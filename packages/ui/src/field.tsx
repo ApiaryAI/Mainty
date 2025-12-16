@@ -1,12 +1,12 @@
-"use client";
+﻿"use client";
 
 import type { VariantProps } from "class-variance-authority";
 import { useMemo } from "react";
 import { cva } from "class-variance-authority";
 
-import { cn } from "@acme/ui";
-import { Label } from "@acme/ui/label";
-import { Separator } from "@acme/ui/separator";
+import { cn } from "@mainty/ui";
+import { Label } from "@mainty/ui/label";
+import { Separator } from "@mainty/ui/separator";
 
 export function FieldSet({
   className,
@@ -247,3 +247,4 @@ export function FieldError({
     </div>
   );
 }
+

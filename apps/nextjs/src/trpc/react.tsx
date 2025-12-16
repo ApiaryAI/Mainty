@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import type { QueryClient } from "@tanstack/react-query";
 import { useState } from "react";
@@ -11,7 +11,7 @@ import {
 import { createTRPCContext } from "@trpc/tanstack-react-query";
 import SuperJSON from "superjson";
 
-import type { AppRouter } from "@acme/api";
+import type { AppRouter } from "@mainty/api";
 
 import { env } from "~/env";
 import { createQueryClient } from "./query-client";
@@ -68,3 +68,4 @@ const getBaseUrl = () => {
   // eslint-disable-next-line no-restricted-properties
   return `http://localhost:${process.env.PORT ?? 3000}`;
 };
+

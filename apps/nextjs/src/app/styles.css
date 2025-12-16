@@ -1,6 +1,6 @@
-@import "tailwindcss";
+﻿@import "tailwindcss";
 @import "tw-animate-css";
-@import "@acme/tailwind-config/theme";
+@import "@mainty/tailwind-config/theme";
 
 @source "../../../../packages/ui/src/*.{ts,tsx}";
 
@@ -27,3 +27,4 @@
     letter-spacing: var(--tracking-normal);
   }
 }
+

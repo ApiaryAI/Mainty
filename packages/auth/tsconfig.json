@@ -1,5 +1,6 @@
-{
-  "extends": "@acme/tsconfig/base.json",
+﻿{
+  "extends": "@mainty/tsconfig/base.json",
   "include": ["src", "*.ts"],
   "exclude": ["node_modules"]
 }
+

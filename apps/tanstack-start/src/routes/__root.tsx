@@ -1,4 +1,4 @@
-/// <reference types="vite/client" />
+﻿/// <reference types="vite/client" />
 import type { QueryClient } from "@tanstack/react-query";
 import type { TRPCOptionsProxy } from "@trpc/tanstack-react-query";
 import type * as React from "react";
@@ -10,9 +10,9 @@ import {
 } from "@tanstack/react-router";
 import { TanStackRouterDevtools } from "@tanstack/react-router-devtools";
 
-import type { AppRouter } from "@acme/api";
-import { ThemeProvider, ThemeToggle } from "@acme/ui/theme";
-import { Toaster } from "@acme/ui/toast";
+import type { AppRouter } from "@mainty/api";
+import { ThemeProvider, ThemeToggle } from "@mainty/ui/theme";
+import { Toaster } from "@mainty/ui/toast";
 
 import appCss from "~/styles.css?url";
 
@@ -54,3 +54,4 @@ function RootDocument({ children }: { children: React.ReactNode }) {
     </ThemeProvider>
   );
 }
+

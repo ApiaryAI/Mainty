@@ -1,5 +1,5 @@
-{
-  "extends": "@acme/tsconfig/base.json",
+﻿{
+  "extends": "@mainty/tsconfig/base.json",
   "compilerOptions": {
     "lib": ["ES2022", "dom", "dom.iterable"],
     "jsx": "preserve",
@@ -10,3 +10,4 @@
   "include": ["**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules"]
 }
+

@@ -1,6 +1,6 @@
-import { reactStartCookies } from "better-auth/react-start";
+﻿import { reactStartCookies } from "better-auth/react-start";
 
-import { initAuth } from "@acme/auth";
+import { initAuth } from "@mainty/auth";
 
 import { env } from "~/env";
 import { getBaseUrl } from "~/lib/url";
@@ -14,3 +14,4 @@ export const auth = initAuth({
 
   extraPlugins: [reactStartCookies()],
 });
+

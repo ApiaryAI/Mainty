@@ -1,4 +1,4 @@
-import { createIsomorphicFn } from "@tanstack/react-start";
+﻿import { createIsomorphicFn } from "@tanstack/react-start";
 import { getRequestHeaders } from "@tanstack/react-start/server";
 import {
   createTRPCClient,
@@ -9,7 +9,7 @@ import {
 import { createTRPCContext } from "@trpc/tanstack-react-query";
 import SuperJSON from "superjson";
 
-import * as Api from "@acme/api";
+import * as Api from "@mainty/api";
 
 import { auth } from "~/auth/server";
 import { env } from "~/env";
@@ -53,3 +53,4 @@ export const makeTRPCClient = createIsomorphicFn()
   });
 
 export const { useTRPC, TRPCProvider } = createTRPCContext<Api.AppRouter>();
+

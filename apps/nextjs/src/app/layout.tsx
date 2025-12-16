@@ -1,9 +1,9 @@
-import type { Metadata, Viewport } from "next";
+﻿import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 
-import { cn } from "@acme/ui";
-import { ThemeProvider, ThemeToggle } from "@acme/ui/theme";
-import { Toaster } from "@acme/ui/toast";
+import { cn } from "@mainty/ui";
+import { ThemeProvider, ThemeToggle } from "@mainty/ui/theme";
+import { Toaster } from "@mainty/ui/toast";
 
 import { env } from "~/env";
 import { TRPCReactProvider } from "~/trpc/react";
@@ -68,3 +68,4 @@ export default function RootLayout(props: { children: React.ReactNode }) {
     </html>
   );
 }
+

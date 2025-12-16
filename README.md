@@ -1,4 +1,4 @@
-# create-t3-turbo
+﻿# create-t3-turbo
 
 > [!NOTE]
 >
@@ -28,48 +28,48 @@ It uses [Turborepo](https://turborepo.com) and contains:
 
 ```text
 .github
-  └─ workflows
-        └─ CI with pnpm cache setup
+  â””â”€ workflows
+        â””â”€ CI with pnpm cache setup
 .vscode
-  └─ Recommended extensions and settings for VSCode users
+  â””â”€ Recommended extensions and settings for VSCode users
 apps
-  ├─ expo
-  │   ├─ Expo SDK 54
-  │   ├─ React Native 0.81 using React 19
-  │   ├─ Navigation using Expo Router
-  │   ├─ Tailwind CSS v4 using NativeWind v5
-  │   └─ Typesafe API calls using tRPC
-  ├─ nextjs
-  │   ├─ Next.js 15
-  │   ├─ React 19
-  │   ├─ Tailwind CSS v4
-  │   └─ E2E Typesafe API Server & Client
-  └─ tanstack-start
-      ├─ Tanstack Start v1 (rc)
-      ├─ React 19
-      ├─ Tailwind CSS v4
-      └─ E2E Typesafe API Server & Client
+  â”œâ”€ expo
+  â”‚   â”œâ”€ Expo SDK 54
+  â”‚   â”œâ”€ React Native 0.81 using React 19
+  â”‚   â”œâ”€ Navigation using Expo Router
+  â”‚   â”œâ”€ Tailwind CSS v4 using NativeWind v5
+  â”‚   â””â”€ Typesafe API calls using tRPC
+  â”œâ”€ nextjs
+  â”‚   â”œâ”€ Next.js 15
+  â”‚   â”œâ”€ React 19
+  â”‚   â”œâ”€ Tailwind CSS v4
+  â”‚   â””â”€ E2E Typesafe API Server & Client
+  â””â”€ tanstack-start
+      â”œâ”€ Tanstack Start v1 (rc)
+      â”œâ”€ React 19
+      â”œâ”€ Tailwind CSS v4
+      â””â”€ E2E Typesafe API Server & Client
 packages
-  ├─ api
-  │   └─ tRPC v11 router definition
-  ├─ auth
-  │   └─ Authentication using better-auth.
-  ├─ db
-  │   └─ Typesafe db calls using Drizzle & Supabase
-  └─ ui
-      └─ Start of a UI package for the webapp using shadcn-ui
+  â”œâ”€ api
+  â”‚   â””â”€ tRPC v11 router definition
+  â”œâ”€ auth
+  â”‚   â””â”€ Authentication using better-auth.
+  â”œâ”€ db
+  â”‚   â””â”€ Typesafe db calls using Drizzle & Supabase
+  â””â”€ ui
+      â””â”€ Start of a UI package for the webapp using shadcn-ui
 tooling
-  ├─ eslint
-  │   └─ shared, fine-grained, eslint presets
-  ├─ prettier
-  │   └─ shared prettier configuration
-  ├─ tailwind
-  │   └─ shared tailwind theme and configuration
-  └─ typescript
-      └─ shared tsconfig you can extend from
+  â”œâ”€ eslint
+  â”‚   â””â”€ shared, fine-grained, eslint presets
+  â”œâ”€ prettier
+  â”‚   â””â”€ shared prettier configuration
+  â”œâ”€ tailwind
+  â”‚   â””â”€ shared tailwind theme and configuration
+  â””â”€ typescript
+      â””â”€ shared tsconfig you can extend from
 ```
 
-> In this template, we use `@acme` as a placeholder for package names. As a user, you might want to replace it with your own organization or project name. You can use find-and-replace to change all the instances of `@acme` to something like `@my-company` or `@project-name`.
+> In this template, we use `@mainty` as a placeholder for package names. As a user, you might want to replace it with your own organization or project name. You can use find-and-replace to change all the instances of `@mainty` to something like `@my-company` or `@project-name`.
 
 ## Quick Start
 
@@ -102,7 +102,7 @@ This project uses [Better Auth](https://www.better-auth.com) for authentication.
 
 ```bash
 # Generate the Better Auth schema
-pnpm --filter @acme/auth generate
+pnpm --filter @mainty/auth generate
 ```
 
 This command runs the Better Auth CLI with the following configuration:
@@ -114,7 +114,7 @@ The generation process:
 
 1. Reads the Better Auth configuration from `packages/auth/script/auth-cli.ts`
 2. Generates the appropriate database schema based on your auth setup
-3. Outputs a Drizzle-compatible schema file to the `@acme/db` package
+3. Outputs a Drizzle-compatible schema file to the `@mainty/db` package
 
 > **Note**: The `auth-cli.ts` file is placed in the `script/` directory (instead of `src/`) to prevent accidental imports from other parts of the codebase. This file is exclusively for CLI schema generation and should **not** be used directly in your application. For runtime authentication, use the configuration from `packages/auth/src/index.ts`.
 
@@ -180,7 +180,7 @@ The generator sets up the `package.json`, `tsconfig.json` and a `index.ts`, as w
 
 ### Does the starter include Solito?
 
-No. Solito will not be included in this repo. It is a great tool if you want to share code between your Next.js and Expo app. However, the main purpose of this repo is not the integration between Next.js and Expo — it's the code splitting of your T3 App into a monorepo. The Expo app is just a bonus example of how you can utilize the monorepo with multiple apps but can just as well be any app such as Vite, Electron, etc.
+No. Solito will not be included in this repo. It is a great tool if you want to share code between your Next.js and Expo app. However, the main purpose of this repo is not the integration between Next.js and Expo â€” it's the code splitting of your T3 App into a monorepo. The Expo app is just a bonus example of how you can utilize the monorepo with multiple apps but can just as well be any app such as Vite, Electron, etc.
 
 Integrating Solito into this repo isn't hard, and there are a few [official templates](https://github.com/nandorojo/solito/tree/master/example-monorepos) by the creators of Solito that you can use as a reference.
 
@@ -284,3 +284,4 @@ Deploying your Expo application works slightly differently compared to Next.js o
 The stack originates from [create-t3-app](https://github.com/t3-oss/create-t3-app).
 
 A [blog post](https://jumr.dev/blog/t3-turbo) where I wrote how to migrate a T3 app into this.
+

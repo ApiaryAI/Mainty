@@ -1,4 +1,4 @@
-/** @typedef {import("prettier").Config} PrettierConfig */
+﻿/** @typedef {import("prettier").Config} PrettierConfig */
 /** @typedef {import("prettier-plugin-tailwindcss").PluginOptions} TailwindConfig */
 /** @typedef {import("@ianvs/prettier-plugin-sort-imports").PluginConfig} SortImportsConfig */
 
@@ -16,8 +16,8 @@ const config = {
     "^(expo(.*)$)|^(expo$)",
     "<THIRD_PARTY_MODULES>",
     "",
-    "<TYPES>^@acme",
-    "^@acme/(.*)$",
+    "<TYPES>^@mainty",
+    "^@mainty/(.*)$",
     "",
     "<TYPES>^[.|..|~]",
     "^~/",
@@ -43,3 +43,4 @@ const config = {
 };
 
 export default config;
+

@@ -1,7 +1,7 @@
-import { defineConfig } from "eslint/config";
+﻿import { defineConfig } from "eslint/config";
 
-import { baseConfig, restrictEnvAccess } from "@acme/eslint-config/base";
-import { reactConfig } from "@acme/eslint-config/react";
+import { baseConfig, restrictEnvAccess } from "@mainty/eslint-config/base";
+import { reactConfig } from "@mainty/eslint-config/react";
 
 export default defineConfig(
   {
@@ -11,3 +11,4 @@ export default defineConfig(
   reactConfig,
   restrictEnvAccess,
 );
+

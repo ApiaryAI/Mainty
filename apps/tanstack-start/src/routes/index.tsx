@@ -1,4 +1,4 @@
-import { Suspense } from "react";
+﻿import { Suspense } from "react";
 import { useForm } from "@tanstack/react-form";
 import {
   useMutation,
@@ -7,19 +7,19 @@ import {
 } from "@tanstack/react-query";
 import { createFileRoute } from "@tanstack/react-router";
 
-import type { RouterOutputs } from "@acme/api";
-import { CreatePostSchema } from "@acme/db/schema";
-import { cn } from "@acme/ui";
-import { Button } from "@acme/ui/button";
+import type { RouterOutputs } from "@mainty/api";
+import { CreatePostSchema } from "@mainty/db/schema";
+import { cn } from "@mainty/ui";
+import { Button } from "@mainty/ui/button";
 import {
   Field,
   FieldContent,
   FieldError,
   FieldGroup,
   FieldLabel,
-} from "@acme/ui/field";
-import { Input } from "@acme/ui/input";
-import { toast } from "@acme/ui/toast";
+} from "@mainty/ui/field";
+import { Input } from "@mainty/ui/input";
+import { toast } from "@mainty/ui/toast";
 
 import { AuthShowcase } from "~/component/auth-showcase";
 import { useTRPC } from "~/lib/trpc";
@@ -243,3 +243,4 @@ function PostCardSkeleton(props: { pulse?: boolean }) {
     </div>
   );
 }
+

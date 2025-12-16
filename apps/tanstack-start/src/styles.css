@@ -1,5 +1,5 @@
-@import "tailwindcss";
-@import "@acme/tailwind-config/theme";
+﻿@import "tailwindcss";
+@import "@mainty/tailwind-config/theme";
 
 @import "@fontsource-variable/geist";
 @import "@fontsource-variable/geist-mono";
@@ -33,3 +33,4 @@
     letter-spacing: var(--tracking-normal);
   }
 }
+

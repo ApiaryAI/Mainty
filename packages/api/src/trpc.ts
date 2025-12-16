@@ -1,4 +1,4 @@
-/**
+﻿/**
  * YOU PROBABLY DON'T NEED TO EDIT THIS FILE, UNLESS:
  * 1. You want to modify request context (see Part 1)
  * 2. You want to create a new middleware or type of procedure (see Part 3)
@@ -10,8 +10,8 @@ import { initTRPC, TRPCError } from "@trpc/server";
 import superjson from "superjson";
 import { z, ZodError } from "zod/v4";
 
-import type { Auth } from "@acme/auth";
-import { db } from "@acme/db/client";
+import type { Auth } from "@mainty/auth";
+import { db } from "@mainty/db/client";
 
 /**
  * 1. CONTEXT
@@ -126,3 +126,4 @@ export const protectedProcedure = t.procedure
       },
     });
   });
+

@@ -1,5 +1,5 @@
-{
-  "name": "@acme/expo",
+﻿{
+  "name": "@mainty/expo",
   "private": true,
   "main": "index.ts",
   "scripts": {
@@ -44,16 +44,17 @@
     "superjson": "2.2.3"
   },
   "devDependencies": {
-    "@acme/api": "workspace:*",
-    "@acme/eslint-config": "workspace:*",
-    "@acme/prettier-config": "workspace:*",
-    "@acme/tailwind-config": "workspace:*",
-    "@acme/tsconfig": "workspace:*",
+    "@mainty/api": "workspace:*",
+    "@mainty/eslint-config": "workspace:*",
+    "@mainty/prettier-config": "workspace:*",
+    "@mainty/tailwind-config": "workspace:*",
+    "@mainty/tsconfig": "workspace:*",
     "@types/react": "catalog:react19",
     "eslint": "catalog:",
     "prettier": "catalog:",
     "tailwindcss": "catalog:",
     "typescript": "catalog:"
   },
-  "prettier": "@acme/prettier-config"
+  "prettier": "@mainty/prettier-config"
 }
+

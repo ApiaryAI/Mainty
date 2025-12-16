@@ -1,4 +1,4 @@
-import { createJiti } from "jiti";
+﻿import { createJiti } from "jiti";
 
 const jiti = createJiti(import.meta.url);
 
@@ -9,11 +9,11 @@ await jiti.import("./src/env");
 const config = {
   /** Enables hot reloading for local packages without a build step */
   transpilePackages: [
-    "@acme/api",
-    "@acme/auth",
-    "@acme/db",
-    "@acme/ui",
-    "@acme/validators",
+    "@mainty/api",
+    "@mainty/auth",
+    "@mainty/db",
+    "@mainty/ui",
+    "@mainty/validators",
   ],
 
   /** We already do linting and typechecking as separate tasks in CI */
@@ -21,3 +21,4 @@ const config = {
 };
 
 export default config;
+
