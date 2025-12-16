@@ -1,4 +1,4 @@
-﻿{
+{
   "name": "@mainty/auth",
   "private": true,
   "type": "module",
@@ -17,21 +17,20 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@mainty/db": "workspace:*",
     "@better-auth/expo": "catalog:",
+    "@mainty/db": "workspace:*",
     "@t3-oss/env-core": "^0.13.8",
     "better-auth": "catalog:",
     "zod": "catalog:"
   },
   "devDependencies": {
+    "@better-auth/cli": "catalog:",
     "@mainty/eslint-config": "workspace:*",
     "@mainty/prettier-config": "workspace:*",
     "@mainty/tsconfig": "workspace:*",
-    "@better-auth/cli": "catalog:",
     "eslint": "catalog:",
     "prettier": "catalog:",
     "typescript": "catalog:"
   },
   "prettier": "@mainty/prettier-config"
 }
-
